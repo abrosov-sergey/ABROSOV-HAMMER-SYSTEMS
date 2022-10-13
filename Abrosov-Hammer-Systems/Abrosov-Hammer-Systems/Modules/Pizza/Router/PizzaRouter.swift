@@ -1,8 +1,18 @@
-//
-//  PizzaRouter.swift
-//  Abrosov-Hammer-Systems
-//
-//  Created by Сергей Абросов on 13.10.2022.
-//
+import UIKit
 
-import Foundation
+protocol NoteRouterInput {
+
+}
+
+final class NoteRouter {
+
+  // MARK: - Properties
+
+  weak var view: ModuleTransitionable?
+}
+
+// MARK: - NoteRouterInput
+
+extension NoteRouter: NoteRouterInput {
+
+}

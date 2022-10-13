@@ -1,8 +1,27 @@
-//
-//  PizzaModuleConfigurator.swift
-//  Abrosov-Hammer-Systems
-//
-//  Created by Сергей Абросов on 13.10.2022.
-//
+import UIKit
 
-import Foundation
+final class NoteModuleConfigurator {
+
+  // MARK: - Configure
+
+  func configure(
+    output: NoteModuleOutput? = nil
+  ) -> (
+    view: NoteViewController,
+    input: NoteModuleInput
+  ) {
+    let view = NoteViewController()
+    let presenter = NotePresenter()
+    let router = NoteRouter()
+
+    presenter.view = view
+    presenter.router = router
+    presenter.output = output
+
+    router.view = view
+
+    view.output = presenter
+
+    return (view, presenter)
+  }
+}

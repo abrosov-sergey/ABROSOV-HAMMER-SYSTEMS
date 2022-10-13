@@ -16,6 +16,7 @@
 		632F71C928F8A4C3009EF6D1 /* PizzaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F71C828F8A4C3009EF6D1 /* PizzaRouter.swift */; };
 		632F71CB28F8A4D8009EF6D1 /* PizzaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F71CA28F8A4D8009EF6D1 /* PizzaPresenter.swift */; };
 		632F71CD28F8A4FB009EF6D1 /* PizzaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F71CC28F8A4FB009EF6D1 /* PizzaView.swift */; };
+		632F71D028F8B995009EF6D1 /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F71CF28F8B995009EF6D1 /* ModuleTransitionable.swift */; };
 		75286EA2DE73F6F12875A430 /* Pods_Abrosov_Hammer_Systems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C478C00C9061CF1F4581F0 /* Pods_Abrosov_Hammer_Systems.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		632F71C828F8A4C3009EF6D1 /* PizzaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaRouter.swift; sourceTree = "<group>"; };
 		632F71CA28F8A4D8009EF6D1 /* PizzaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaPresenter.swift; sourceTree = "<group>"; };
 		632F71CC28F8A4FB009EF6D1 /* PizzaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaView.swift; sourceTree = "<group>"; };
+		632F71CF28F8B995009EF6D1 /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
 		ACA27CE7A66CD0E808884B00 /* Pods-Abrosov-Hammer-Systems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abrosov-Hammer-Systems.debug.xcconfig"; path = "Target Support Files/Pods-Abrosov-Hammer-Systems/Pods-Abrosov-Hammer-Systems.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C478C00C9061CF1F4581F0 /* Pods_Abrosov_Hammer_Systems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abrosov_Hammer_Systems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -54,7 +56,6 @@
 				ACA27CE7A66CD0E808884B00 /* Pods-Abrosov-Hammer-Systems.debug.xcconfig */,
 				6015579B2D8A5966D1C2FF1D /* Pods-Abrosov-Hammer-Systems.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -107,6 +108,7 @@
 		632F71B928F8A333009EF6D1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				632F71CE28F8B95D009EF6D1 /* ModuleTransitionable */,
 				632F71C328F8A3EC009EF6D1 /* Main */,
 				632F71BC28F8A362009EF6D1 /* Pizza */,
 			);
@@ -179,6 +181,14 @@
 				632F71A628F89051009EF6D1 /* ViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		632F71CE28F8B95D009EF6D1 /* ModuleTransitionable */ = {
+			isa = PBXGroup;
+			children = (
+				632F71CF28F8B995009EF6D1 /* ModuleTransitionable.swift */,
+			);
+			path = ModuleTransitionable;
 			sourceTree = "<group>";
 		};
 		E4817E3D84B20D49DACE92FE /* Frameworks */ = {
@@ -305,6 +315,7 @@
 			files = (
 				632F71C928F8A4C3009EF6D1 /* PizzaRouter.swift in Sources */,
 				632F71CB28F8A4D8009EF6D1 /* PizzaPresenter.swift in Sources */,
+				632F71D028F8B995009EF6D1 /* ModuleTransitionable.swift in Sources */,
 				632F71A728F89051009EF6D1 /* ViewController.swift in Sources */,
 				632F71C528F8A446009EF6D1 /* ExtentionUIColor.swift in Sources */,
 				632F71A328F89051009EF6D1 /* AppDelegate.swift in Sources */,
