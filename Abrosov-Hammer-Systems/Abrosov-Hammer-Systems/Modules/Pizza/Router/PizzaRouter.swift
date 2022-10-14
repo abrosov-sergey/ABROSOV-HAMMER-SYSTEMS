@@ -1,18 +1,18 @@
 import UIKit
 
-protocol NoteRouterInput {
+protocol PizzaRouterInput {
 
 }
 
-final class NoteRouter {
+final class PizzaRouter {
 
   // MARK: - Properties
 
   weak var view: ModuleTransitionable?
 }
 
-// MARK: - NoteRouterInput
+// MARK: - PizzaRouterInput
 
-extension NoteRouter: NoteRouterInput {
+extension PizzaRouter: PizzaRouterInput {
 
 }
