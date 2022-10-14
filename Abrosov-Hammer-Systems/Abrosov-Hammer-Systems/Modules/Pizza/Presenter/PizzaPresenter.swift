@@ -1,23 +1,23 @@
-protocol NoteModuleInput: AnyObject {
+protocol PizzaModuleInput: AnyObject {
 
 }
 
-protocol NoteModuleOutput: AnyObject {
+protocol PizzaModuleOutput: AnyObject {
 
 }
 
-final class NotePresenter {
+final class PizzaPresenter {
 
   // MARK: - Properties
 
-  weak var view: NoteViewInput?
-  var router: NoteRouterInput?
-  weak var output: NoteModuleOutput?
+  weak var view: PizzaViewInput?
+  var router: PizzaRouterInput?
+  weak var output: PizzaModuleOutput?
 }
 
 // MARK: - NoteViewOutput
 
-extension NotePresenter: NoteViewOutput {
+extension PizzaPresenter: PizzaViewOutput {
 
   func viewDidLoad() {
 
@@ -26,6 +26,6 @@ extension NotePresenter: NoteViewOutput {
 
 // MARK: - NoteInput
 
-extension NotePresenter: NoteModuleInput {
+extension PizzaPresenter: PizzaModuleInput {
 
 }

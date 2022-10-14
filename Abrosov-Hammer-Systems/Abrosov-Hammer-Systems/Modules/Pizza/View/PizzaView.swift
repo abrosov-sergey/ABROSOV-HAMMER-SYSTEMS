@@ -1,22 +1,22 @@
 import UIKit
 
-protocol NoteViewInput: AnyObject {
+protocol PizzaViewInput: AnyObject {
 
 }
 
-protocol NoteViewOutput: AnyObject {
+protocol PizzaViewOutput: AnyObject {
   func viewDidLoad()
 }
 
 
-final class NoteViewController: UIViewController, ModuleTransitionable {
+final class PizzaViewController: UIViewController, ModuleTransitionable {
 
   // MARK: - Outlets
 
 
   // MARK: - Properties
 
-  var output: NoteViewOutput?
+  var output: PizzaViewOutput?
 
   // MARK: - UIViewController
 
@@ -39,8 +39,8 @@ final class NoteViewController: UIViewController, ModuleTransitionable {
   }
 }
 
-// MARK: - TroikaServiceViewInput
+// MARK: - PizzaViewInput
 
-extension NoteViewController: NoteViewInput {
+extension PizzaViewController: PizzaViewInput {
 
 }
