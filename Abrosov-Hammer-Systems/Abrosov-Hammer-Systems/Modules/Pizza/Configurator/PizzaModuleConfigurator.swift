@@ -5,14 +5,14 @@ final class NoteModuleConfigurator {
   // MARK: - Configure
 
   func configure(
-    output: NoteModuleOutput? = nil
+    output: PizzaModuleOutput? = nil
   ) -> (
-    view: NoteViewController,
-    input: NoteModuleInput
+    view: PizzaViewController,
+    input: PizzaModuleInput
   ) {
-    let view = NoteViewController()
-    let presenter = NotePresenter()
-    let router = NoteRouter()
+    let view = PizzaViewController()
+    let presenter = PizzaPresenter()
+    let router = PizzaRouter()
 
     presenter.view = view
     presenter.router = router

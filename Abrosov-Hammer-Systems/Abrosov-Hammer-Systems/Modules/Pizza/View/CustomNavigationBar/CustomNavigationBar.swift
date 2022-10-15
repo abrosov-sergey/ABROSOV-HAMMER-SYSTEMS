@@ -1,15 +1,11 @@
 import UIKit
 import SnapKit
 
-class customNavigationBar: UIView {
-    private let mainNavigationBar: UIView = {
-        let customNavigationBarView = UIView()
-        return customNavigationBarView
-    }()
-    
+class CustomNavigationBar: UIView {
     private let mainCityButton: UIButton = {
         var customCityButton = UIButton()
         customCityButton.setTitle("Москва ▽", for: .normal)
+        customCityButton.setTitleColor(ApplicationColors.mainLightFont, for: .normal)
         return customCityButton
     }()
     
@@ -23,18 +19,11 @@ class customNavigationBar: UIView {
     }
     
     private func configUI() {
-        self.addSubview(mainNavigationBar)
         self.addSubview(mainCityButton)
-        
-        mainNavigationBar.snp.makeConstraints { make in
-            make.left.right.equalToSuperview()
-            make.top.equalTo(safeAreaInsets)
-            make.width.equalTo(200)
-        }
-        
+            
         mainCityButton.snp.makeConstraints { make in
             make.left.equalToSuperview().inset(16)
-            make.top.equalTo(safeAreaInsets).inset(30)
+            make.top.equalToSuperview().inset(60)
         }
     }
 }

@@ -11,8 +11,17 @@ protocol PizzaViewOutput: AnyObject {
 
 final class PizzaViewController: UIViewController, ModuleTransitionable {
 
-  // MARK: - Outlets
+  // MARK: - UI
 
+    private lazy var mainNavBar: CustomNavigationBar = {
+        var customNavBar = CustomNavigationBar()
+        return customNavBar
+    }()
+    
+//    private var mainTabBar: BasicTabBar = {
+//        var tabBar = BasicTabBar()
+//        return tabBar
+//    }()
 
   // MARK: - Properties
 
@@ -23,6 +32,8 @@ final class PizzaViewController: UIViewController, ModuleTransitionable {
   override func viewDidLoad() {
     super.viewDidLoad()
     output?.viewDidLoad()
+      
+      setupUI()
   }
 
   // MARK: - Actions
@@ -31,11 +42,22 @@ final class PizzaViewController: UIViewController, ModuleTransitionable {
   // MARK: - Setup
 
   private func setupUI() {
-
+      view.backgroundColor = ApplicationColors.mainLightBackgroundColor
+      
+      view.addSubview(mainNavBar)
+      
+      //mainTabBar.modalPresentationStyle = .fullScreen
+      //present(BasicTabBar(), animated: true)
+      
+      makeConstraints()
   }
 
-  private func setupLocalization() {
-
+  private func makeConstraints() {
+      mainNavBar.snp.makeConstraints { make in
+          make.top.equalTo(self.view.safeAreaInsets)
+          make.trailing.leading.equalToSuperview()
+          make.height.equalTo(70)
+      }
   }
 }
 
