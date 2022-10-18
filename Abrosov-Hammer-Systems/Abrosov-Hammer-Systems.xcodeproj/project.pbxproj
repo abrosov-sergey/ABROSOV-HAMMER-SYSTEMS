@@ -21,6 +21,7 @@
 		632F71D728F96BA3009EF6D1 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F71D628F96BA3009EF6D1 /* CustomNavigationBar.swift */; };
 		632F71DA28F96CA1009EF6D1 /* BasicTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F71D928F96CA1009EF6D1 /* BasicTabBar.swift */; };
 		63AD5A2628FAB43100170CE0 /* EnumColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AD5A2528FAB43100170CE0 /* EnumColors.swift */; };
+		63AD5A2928FB065300170CE0 /* PizzaTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AD5A2828FB065300170CE0 /* PizzaTypeCell.swift */; };
 		75286EA2DE73F6F12875A430 /* Pods_Abrosov_Hammer_Systems.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7C478C00C9061CF1F4581F0 /* Pods_Abrosov_Hammer_Systems.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		632F71D628F96BA3009EF6D1 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		632F71D928F96CA1009EF6D1 /* BasicTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTabBar.swift; sourceTree = "<group>"; };
 		63AD5A2528FAB43100170CE0 /* EnumColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumColors.swift; sourceTree = "<group>"; };
+		63AD5A2828FB065300170CE0 /* PizzaTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTypeCell.swift; sourceTree = "<group>"; };
 		ACA27CE7A66CD0E808884B00 /* Pods-Abrosov-Hammer-Systems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abrosov-Hammer-Systems.debug.xcconfig"; path = "Target Support Files/Pods-Abrosov-Hammer-Systems/Pods-Abrosov-Hammer-Systems.debug.xcconfig"; sourceTree = "<group>"; };
 		E7C478C00C9061CF1F4581F0 /* Pods_Abrosov_Hammer_Systems.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abrosov_Hammer_Systems.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 		632F71B928F8A333009EF6D1 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				63EEC7B428FEEE2A0043F77E /* Contacts */,
 				632F71CE28F8B95D009EF6D1 /* ModuleTransitionable */,
 				632F71C328F8A3EC009EF6D1 /* Main */,
 				632F71BC28F8A362009EF6D1 /* Pizza */,
@@ -223,8 +226,16 @@
 		63AD5A2728FB040F00170CE0 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				63AD5A2828FB065300170CE0 /* PizzaTypeCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		63EEC7B428FEEE2A0043F77E /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contacts;
 			sourceTree = "<group>";
 		};
 		E4817E3D84B20D49DACE92FE /* Frameworks */ = {
@@ -358,6 +369,7 @@
 				632F71DA28F96CA1009EF6D1 /* BasicTabBar.swift in Sources */,
 				632F71C528F8A446009EF6D1 /* ExtentionUIColor.swift in Sources */,
 				632F71A328F89051009EF6D1 /* AppDelegate.swift in Sources */,
+				63AD5A2928FB065300170CE0 /* PizzaTypeCell.swift in Sources */,
 				632F71C728F8A4B1009EF6D1 /* PizzaModuleConfigurator.swift in Sources */,
 				63AD5A2628FAB43100170CE0 /* EnumColors.swift in Sources */,
 				632F71CD28F8A4FB009EF6D1 /* PizzaView.swift in Sources */,

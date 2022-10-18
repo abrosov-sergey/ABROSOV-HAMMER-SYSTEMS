@@ -17,14 +17,20 @@ class BasicTabBar: UITabBarController, UITabBarControllerDelegate {
 
 extension BasicTabBar {
     private func generateTabBarControllers() {
-//        viewControllers = [
-//            generateVC(
-//                viewController: PizzaViewController(),
-//                title: "Pizza",
-//                image: UIImage(named: "Pizza-icon"),
-//                selectedImage: UIImage(named: "Pizza-icon")
-//            )
-//        ]
+//        self.setViewControllers([generateVC(viewController: PizzaViewController(), title: "Pizza", image: UIImage(named: "Pizza-icon"),
+//            selectedImage: UIImage(named: "Pizza-icon")
+//    )], animated: <#T##Bool#>)
+        
+//        self.setViewControllers(
+//            viewControllers: [
+//                generateVC(
+//                    viewController: PizzaViewController(),
+//                    title: "Pizza",
+//                    image: UIImage(named: "Pizza-icon"),
+//                    selectedImage: UIImage(named: "Pizza-icon")
+//            )],
+//            animated: true
+//        )
     }
     
     private func generateVC(viewController: UIViewController, title: String, image: UIImage?, selectedImage: UIImage?) -> UIViewController {
